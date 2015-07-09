@@ -1,0 +1,8 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="col-md-4" ng-repeat="val in authors.all">
+            <a ui-sref="authorsBooks({author: val.name})"><img src="{{val.img}}" alt="{{val.name}}" class="img-circle authorImg"/></a>
+            <div class="authorText"><a ui-sref="authorsBooks({author: val.name})">{{val.name}} / books {{val.count}}</a></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+{
+  "name": "BookShelf",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jakemmarsh/angularjs-gulp-browserify-boilerplate",
+  "authors": [
+    "Mark Orel <mail.ormark@gmail.com>"
+  ],
+  "description": "Book Shelf",
+  "main": "build/index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4"
+  }
+}

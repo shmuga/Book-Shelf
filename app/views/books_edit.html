@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-md-12">
+        <form name="bookForm" ng-submit="booksEdit.submit()">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input required name="title" type="text" ng-model="booksEdit.new.title"
+                           id="title" class="form-control" ng-pattern="booksEdit.patterns.title"/>
+                    <p ng-show="bookForm.title.$error.pattern" class="help-block">
+                        Title must be only letters ',' and '!'.
+                    </p>
+                </div>
+                <div class="form-group">
+                    <label for="year">Year</label>
+                    <input required type="text" name="year" ng-model="booksEdit.new.year" id="year" class="form-control" ng-pattern="booksEdit.patterns.year"/>
+                    <p ng-show="bookForm.year.$error.pattern" class="help-block">
+                        Year must be only numbers.
+                    </p>
+                </div>
+                <div class="form-group">
+                    <label for="pages">Pages</label>
+                    <input required type="text" ng-model="booksEdit.new.pages" id="pages" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="image">Image</label>
+                    <input required type="text" ng-model="booksEdit.new.image" id="image" class="form-control"/>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="Author">Author</label>
+                    <select required multiple class="form-control" ng-model="booksEdit.new.author" id="author">
+                        <option ng-repeat="val in booksEdit.authors">{{val.name}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button ng-disabled="!bookForm.$valid" type="submit" class="col-md-4 col-md-offset-4 btn btn-success">Add</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,78 @@
+@import 'vars';
+@import 'typography';
+
+body {
+  font-family: Helvetica, sans-serif;
+  color: $font-color--dark;
+  background-color: $background--light;
+  padding: $half-space;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px !important;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #f5f5f5;
+  padding-top: 25px;
+}
+
+.authorImg{
+  padding: 10px;
+  height: 300px;
+}
+.authorText{
+  text-align: center;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.book{
+  height:350px;
+  padding: 10px;
+}
+.bookBorder{
+  padding: 5px;
+  outline: dashed 1px #c2ccd1;
+}
+.stars{
+  text-align: center;
+}
+.bookImage{
+  height:200px !important;
+  margin: auto;
+}
+.bookTitle{
+  height:50px;
+  font-weight: bold;
+}
+.bookAuthors{
+  height: 50px;
+}
+.tools{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+}
+
+.addBookBtn{
+  height: 100%;
+}
+
+body > .container {
+  padding: 60px 30px 0 !important;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
