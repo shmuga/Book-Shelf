@@ -1,4 +1,6 @@
 #DETAILS
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/shmuga/Book-Shelf.svg)](https://greenkeeper.io/)
 Book Shelf app based on AngularJS.
 
 #INSTALLATION
